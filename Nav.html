@@ -38,9 +38,9 @@ function indicator(e) {
 
 item.forEach(link => {
     link.addEventListener("click", (e) => {
-        e.preventDefault(); // Prevent the default behavior of anchor tags
+        e.preventDefault();
         indicator(e.target);
-        addActiveClass.call(e.target); // Call addActiveClass and set 'this' to the clicked element
+        addActiveClass.call(e.target); 
     });
 });
 
